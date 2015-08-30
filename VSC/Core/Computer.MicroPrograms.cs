@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
+//using System.Diagnostics.Contracts;
 
 namespace Vsc.Core
 {
@@ -24,7 +24,7 @@ namespace Vsc.Core
 				this.PerformADD, this.PerformSUB, this.PerformMUL, this.PerformDIV
 			};
 
-            Contract.Assert(this.microPrograms.Length == Enum.GetNames(typeof(OpCode)).Length);
+            //Contract.Assert(this.microPrograms.Length == Enum.GetNames(typeof(OpCode)).Length);
         }
         
         private void PerformSTOP()

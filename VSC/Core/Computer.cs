@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
+//using System.Diagnostics.Contracts;
 
 namespace Vsc.Core
 {
@@ -7,10 +7,10 @@ namespace Vsc.Core
     {
         public Computer(int memoryCapacity, double[] program)
         {
-            Contract.Requires(memoryCapacity > 0);
-            Contract.Requires(program != null);
-            Contract.Requires(program.Length > 0);
-            Contract.Requires(memoryCapacity >= program.Length);
+            //Contract.Requires(memoryCapacity > 0);
+            //Contract.Requires(program != null);
+            //Contract.Requires(program.Length > 0);
+            //Contract.Requires(memoryCapacity >= program.Length);
 
             this.InitMicroPrograms();
 

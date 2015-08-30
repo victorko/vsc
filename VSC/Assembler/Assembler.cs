@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics.Contracts;
+//using System.Diagnostics.Contracts;
 using Vsc.Core;
 
 namespace Vsc.Assembler
@@ -9,7 +9,7 @@ namespace Vsc.Assembler
     {
         public static double[] Compile(string code)
         {
-            Contract.Requires(!string.IsNullOrEmpty(code));
+            //Contract.Requires(!string.IsNullOrEmpty(code));
 
             var lines = code.Split(new[] { "\r\n" }, StringSplitOptions.RemoveEmptyEntries);
 
@@ -57,9 +57,10 @@ namespace Vsc.Assembler
                 }
                 else
                 {
-                    OpCode command;
-                    if (!Enum.TryParse(word, true, out command))
-                        throw new Exception("Unknown command");
+                    //OpCode command;
+                    //if (!Enum.TryParse(word, true, out command))
+                    //    throw new Exception("Unknown command");
+                    var command = (OpCode)Enum.Parse(typeof(OpCode), word, true);
                     result[index] = (double)command;
 
                 }

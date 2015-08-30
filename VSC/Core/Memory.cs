@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Diagnostics.Contracts;
+//using System.Diagnostics.Contracts;
 
 namespace Vsc.Core
 {
@@ -9,10 +9,10 @@ namespace Vsc.Core
 
         internal Memory(int capacity, double[] initialState)
         {
-            Contract.Requires(capacity > 0);
-            Contract.Requires(initialState != null);
-            Contract.Requires(initialState.Length > 0);
-            Contract.Requires(initialState.Length <= capacity);
+            //Contract.Requires(capacity > 0);
+            //Contract.Requires(initialState != null);
+            //Contract.Requires(initialState.Length > 0);
+            //Contract.Requires(initialState.Length <= capacity);
 
             this.data = new double[capacity];
 
@@ -28,15 +28,15 @@ namespace Vsc.Core
         {
             get
             {
-                Contract.Requires(address >= 0);
-                Contract.Requires(address < this.Capacity);
+                //Contract.Requires(address >= 0);
+                //Contract.Requires(address < this.Capacity);
 
                 return this.data[address];
             }
             set
             {
-                Contract.Requires(address >= 0);
-                Contract.Requires(address < this.Capacity);
+                //Contract.Requires(address >= 0);
+                //Contract.Requires(address < this.Capacity);
 
                 var oldValue = this.data[address];
                 this.data[address] = value;
