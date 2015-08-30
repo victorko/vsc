@@ -9,6 +9,6 @@ namespace Vsc.Core
             this.ActionDescription = actionDescription;
         }
 
-        public string ActionDescription { get; private set; }
+        public string ActionDescription { get; }
     }
 }

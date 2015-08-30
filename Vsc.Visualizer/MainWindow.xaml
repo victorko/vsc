@@ -1,0 +1,474 @@
+﻿<Window x:Class="Vsc.Visualizer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Vsc.Visualizer"
+        mc:Ignorable="d"
+        Title="Very Simple Computer" Height="592" Width="935" ResizeMode="NoResize" WindowStartupLocation="CenterScreen">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="254,5,0,0" TextWrapping="Wrap" Text="Memory" VerticalAlignment="Top" FontWeight="Bold" FontSize="14.667"/>
+        <StackPanel HorizontalAlignment="Left" Height="478" Margin="10,36,0,0" VerticalAlignment="Top" Width="108">
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress0" TextWrapping="Wrap" Text="0:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData0" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress1" TextWrapping="Wrap" Text="1:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData1" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress2" TextWrapping="Wrap" Text="2:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData2" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress3" TextWrapping="Wrap" Text="3:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData3" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress4" TextWrapping="Wrap" Text="4:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData4" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress5" TextWrapping="Wrap" Text="5:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData5" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress6" TextWrapping="Wrap" Text="6:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData6" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress7" TextWrapping="Wrap" Text="7:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData7" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress8" TextWrapping="Wrap" Text="8:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData8" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress9" TextWrapping="Wrap" Text="9:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData9" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress10" TextWrapping="Wrap" Text="10:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData10" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress11" TextWrapping="Wrap" Text="11:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData11" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress12" TextWrapping="Wrap" Text="12:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData12" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress13" TextWrapping="Wrap" Text="13:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData13" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress14" TextWrapping="Wrap" Text="14:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData14" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress15" TextWrapping="Wrap" Text="15:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData15" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress16" TextWrapping="Wrap" Text="16:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData16" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress17" TextWrapping="Wrap" Text="17:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData17" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress18" TextWrapping="Wrap" Text="18:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData18" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress19" TextWrapping="Wrap" Text="19:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData19" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="478" Margin="116,36,0,0" VerticalAlignment="Top" Width="108">
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress20" TextWrapping="Wrap" Text="20:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData20" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress21" TextWrapping="Wrap" Text="21:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData21" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress22" TextWrapping="Wrap" Text="22:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData22" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress23" TextWrapping="Wrap" Text="23:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData23" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress24" TextWrapping="Wrap" Text="24:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData24" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress25" TextWrapping="Wrap" Text="25:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData25" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress26" TextWrapping="Wrap" Text="26:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData26" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress27" TextWrapping="Wrap" Text="27:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData27" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress28" TextWrapping="Wrap" Text="28:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData28" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress29" TextWrapping="Wrap" Text="29:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData29" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress30" TextWrapping="Wrap" Text="30:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData30" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress31" TextWrapping="Wrap" Text="31:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData31" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress32" TextWrapping="Wrap" Text="32:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData32" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress33" TextWrapping="Wrap" Text="33:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData33" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress34" TextWrapping="Wrap" Text="34:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData34" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress35" TextWrapping="Wrap" Text="35:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData35" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress36" TextWrapping="Wrap" Text="36:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData36" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress37" TextWrapping="Wrap" Text="37:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData37" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress38" TextWrapping="Wrap" Text="38:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData38" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress39" TextWrapping="Wrap" Text="39:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData39" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="478" Margin="217,36,0,0" VerticalAlignment="Top" Width="108">
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress40" TextWrapping="Wrap" Text="40:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData40" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress41" TextWrapping="Wrap" Text="41:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData41" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress42" TextWrapping="Wrap" Text="42:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData42" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress43" TextWrapping="Wrap" Text="43:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData43" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress44" TextWrapping="Wrap" Text="44:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData44" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress45" TextWrapping="Wrap" Text="45:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData45" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress46" TextWrapping="Wrap" Text="46:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData46" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress47" TextWrapping="Wrap" Text="47:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData47" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress48" TextWrapping="Wrap" Text="48:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData48" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress49" TextWrapping="Wrap" Text="49:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData49" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress50" TextWrapping="Wrap" Text="50:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData50" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress51" TextWrapping="Wrap" Text="51:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData51" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress52" TextWrapping="Wrap" Text="52:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData52" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress53" TextWrapping="Wrap" Text="53:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData53" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress54" TextWrapping="Wrap" Text="54:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData54" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress55" TextWrapping="Wrap" Text="55:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData55" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress56" TextWrapping="Wrap" Text="56:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData56" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress57" TextWrapping="Wrap" Text="57:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData57" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress58" TextWrapping="Wrap" Text="58:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData58" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress59" TextWrapping="Wrap" Text="59:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData59" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="478" Margin="323,36,0,0" VerticalAlignment="Top" Width="108">
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress60" TextWrapping="Wrap" Text="60:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData60" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress61" TextWrapping="Wrap" Text="61:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData61" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress62" TextWrapping="Wrap" Text="62:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData62" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress63" TextWrapping="Wrap" Text="63:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData63" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress64" TextWrapping="Wrap" Text="64:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData64" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress65" TextWrapping="Wrap" Text="65:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData65" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress66" TextWrapping="Wrap" Text="66:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData66" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress67" TextWrapping="Wrap" Text="67:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData67" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress68" TextWrapping="Wrap" Text="68:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData68" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress69" TextWrapping="Wrap" Text="69:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData69" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress70" TextWrapping="Wrap" Text="70:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData70" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress71" TextWrapping="Wrap" Text="71:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData71" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress72" TextWrapping="Wrap" Text="72:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData72" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress73" TextWrapping="Wrap" Text="73:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData73" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress74" TextWrapping="Wrap" Text="74:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData74" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress75" TextWrapping="Wrap" Text="75:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData75" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress76" TextWrapping="Wrap" Text="76:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData76" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress77" TextWrapping="Wrap" Text="77:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData77" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress78" TextWrapping="Wrap" Text="78:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData78" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress79" TextWrapping="Wrap" Text="79:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData79" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Left" Height="478" Margin="430,36,0,0" VerticalAlignment="Top" Width="108">
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress80" TextWrapping="Wrap" Text="80:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData80" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress81" TextWrapping="Wrap" Text="81:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData81" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress82" TextWrapping="Wrap" Text="82:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData82" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress83" TextWrapping="Wrap" Text="83:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData83" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress84" TextWrapping="Wrap" Text="84:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData84" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress85" TextWrapping="Wrap" Text="85:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData85" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress86" TextWrapping="Wrap" Text="86:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData86" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress87" TextWrapping="Wrap" Text="87:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData87" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress88" TextWrapping="Wrap" Text="88:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData88" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress89" TextWrapping="Wrap" Text="89:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData89" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress90" TextWrapping="Wrap" Text="90:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData90" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress91" TextWrapping="Wrap" Text="91:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData91" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress92" TextWrapping="Wrap" Text="92:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData92" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress93" TextWrapping="Wrap" Text="93:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData93" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress94" TextWrapping="Wrap" Text="94:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData94" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress95" TextWrapping="Wrap" Text="95:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData95" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress96" TextWrapping="Wrap" Text="96:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData96" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress97" TextWrapping="Wrap" Text="97:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData97" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress98" TextWrapping="Wrap" Text="98:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData98" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Height="23" Orientation="Horizontal">
+                <TextBlock x:Name="txtAddress99" TextWrapping="Wrap" Text="99:" Width="40" HorizontalAlignment="Left" TextAlignment="Right"/>
+                <TextBlock x:Name="txtData99" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+            </StackPanel>
+        </StackPanel>
+
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="678,5,0,0" TextWrapping="Wrap" Text="Registers" VerticalAlignment="Top" FontWeight="Bold" FontSize="14.667"/>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="543,33,240,463">
+            <TextBlock x:Name="txtRegA" TextWrapping="Wrap" Text="A:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegAValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="543,57,240,439">
+            <TextBlock x:Name="txtRegD" TextWrapping="Wrap" Text="D:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegDValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="625,34,160,464">
+            <TextBlock x:Name="txtRegPC" TextWrapping="Wrap" Text="PC:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegPCValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="625,58,161,440">
+            <TextBlock x:Name="txtRegP" TextWrapping="Wrap" Text="P:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegPValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="726,34,103,464">
+            <TextBlock x:Name="txtRegX" TextWrapping="Wrap" Text="X:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegXValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="726,58,103,440">
+            <TextBlock x:Name="txtRegY" TextWrapping="Wrap" Text="Y:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegYValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="726,82,103,416">
+            <TextBlock x:Name="txtRegZ" TextWrapping="Wrap" Text="Z:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegZValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="804,34,25,464">
+            <TextBlock x:Name="txtRegI" TextWrapping="Wrap" Text="I:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegIValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Height="23" Width="100" Orientation="Horizontal" Margin="804,58,25,440">
+            <TextBlock x:Name="txtRegO" TextWrapping="Wrap" Text="O:" Width="40" HorizontalAlignment="Left" TextAlignment="Right" FontWeight="Bold"/>
+            <TextBlock x:Name="txtRegOValue" TextWrapping="Wrap" Text="0" Width="57" TextAlignment="Center"/>
+        </StackPanel>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="637,130,0,0" TextWrapping="Wrap" Text="Input" VerticalAlignment="Top" FontWeight="Bold" FontSize="14.667"/>
+        <TextBlock x:Name="textBlock_Copy2" HorizontalAlignment="Left" Margin="804,130,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" FontWeight="Bold" FontSize="14.667"/>
+        <TextBox x:Name="txtInputValue" HorizontalAlignment="Left" Height="23" Margin="596,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" KeyDown="txtInputValue_KeyDown" IsEnabled="False"/>
+        <TextBox x:Name="txtInputLog" HorizontalAlignment="Left" Height="230" Margin="596,196,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <TextBox x:Name="txtOutputLog" HorizontalAlignment="Left" Height="263" Margin="773,163,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" TextAlignment="Center" IsReadOnly="True" ScrollViewer.VerticalScrollBarVisibility="Auto"/>
+        <Button x:Name="btnLoad" Content="Load" HorizontalAlignment="Left" Margin="667,450,0,0" VerticalAlignment="Top" Width="95" Height="35" FontSize="14.667" Click="btnLoad_Click"/>
+        <Button x:Name="btnStep" Content="Step &gt;" HorizontalAlignment="Left" Margin="798,450,0,0" VerticalAlignment="Top" Width="95" Height="35" FontSize="14.667" Click="btnStep_Click" IsEnabled="False"/>
+        <TextBlock x:Name="txtLogMicroActions" HorizontalAlignment="Left" Margin="37,519,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="856" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

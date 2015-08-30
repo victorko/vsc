@@ -11,10 +11,10 @@ namespace Vsc.Core
             this.NewValue = newValue;
         }
 
-        public int Address { get; private set; }
+        public int Address { get; }
 
-        public double OldValue { get; private set; }
+        public double OldValue { get; }
 
-        public double NewValue { get; private set; }
+        public double NewValue { get; }
     }
 }

@@ -9,6 +9,6 @@ namespace Vsc.Core
             this.Value = value;
         }
 
-        public double Value { get; private set; }
+        public double Value { get; }
     }
 }
